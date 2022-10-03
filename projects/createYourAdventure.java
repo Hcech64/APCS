@@ -78,9 +78,22 @@ public class createYourAdventure {
                 //steal house
                 if (answer.equals("a")){
                     System.out.println("You use his fingerprint to open his safe. You transfer the deed into your name and burry his body under the garden in the back. Now that you own the house, you put up a listing to rent out the your old room, and you move into the owner's bigger room. You get an offer for your appartment that would pay for all the utilities. The offer is from an ex seal team 6 badass, do you accept? type \'a\' to accpet type \'b\' to decline");
+                    
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){
+                        System.out.println("you accept the offer, but your new tennant finds your seacret and mmurders you in your sleep");
+                    }
+                    if (answer.equals("b")){
+                        System.out.println("you decline the offer, but he finds you secret and murders you in your sleep.");
+
+                    }
+
                 }
+                //call help
                 else if (answer.equals("b")){
-                    System.out.println("You call teh ambulance and they arrive in 20 minutes. As the parametics are taking him away, a police officer arrives on the sceen and askes you what happened. type \'a\' to admit to stabbing him, or type \'b\' to lie to the cops and say he sliped and fell.");
+                    System.out.println("You call the ambulance and they arrive in 20 minutes. As the parametics are taking him away, a police officer arrives on the sceen and askes you what happened. type \'a\' to admit to stabbing him, or type \'b\' to lie to the cops and say he sliped and fell.");
 
                     answer = keyboard.nextLine();
                     answer = checkValid(answer);
@@ -89,7 +102,7 @@ public class createYourAdventure {
                             System.out.println("you admit to stabbing him, and are sent to prison, you then are brutally murdered by a large felon who didnt like the way u ate your broccli");
                     }
                     else if (answer.equals("b")){
-                        System.out.println("");
+                        System.out.println("you lie to the cops and they find out. You are sent to prison, where you are brutally murdered by a large felon who didnt like the way u ate your broccli");
                     }
                 }
 
@@ -104,12 +117,131 @@ public class createYourAdventure {
         }
         //need money
         else if (answer.equals("b")){
-           
+            System.out.println("You decide to make a little extra money. You only know of two ways to get money: type \'a\' to choose McDonalds, or type \'b\' to chooseAssasination");
+            
+            answer = keyboard.nextLine();
+            answer = checkValid(answer);
+            //Mcdonalds
+            if (answer.equals("a")){
+                System.out.println("You go to McDonalds and get a second job, you get a little extra money which allows you to pay your rent. One day, a dud comes into your store with a shotgun and demands all the money in the register. type \'a\' to give him money, or \'b\' to pull out your bigger shotgun.");
+            
+                answer = keyboard.nextLine();
+                answer = checkValid(answer);
 
+                if (answer.equals("a")){
+                    System.out.println("you give him all the money, and he leaves. Your manager scolds you and you get fired. You are now looking for another job, so you go to Taco Bell. The same robber comes into the taco bell a week later, asking for all the money in the register. Type \'a\' to give him the money, or type \'to pull out your gun.\'");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
 
+                    if (answer.equals("a")){
+                            System.out.println("You give him all the money, but he thinks that you will report him to the cops so he shoots you. You die on the floor of the Taco Bell.");
+                    }
+                    else if (answer.equals("b")){
+                        System.out.println("You pull out your gun and shoot him in the chest. You think he is dead to you come out from behind the counter. He is still alive and shoots you before he dies. You die on the floor of the Taco Bell.");
+                    }
+                }
+                else if (answer.equals("b")){
+                    System.out.println("You pull out your gun and shoot him in the face. He dies. the cops come to see what happened. Type \'a\' to tell them what happened or type \'b\' lie and say you didnt shoot him.");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){
+                            System.out.println("you tell them what happened but are still arrested for manslaughter. you are found guilty by a very currupt jury and sentenced to life in prison. You are shived 5 years into your sentece by a routy cell mate.");
+                    }
+                    else if (answer.equals("b")){
+                        System.out.println("you lie to the cops but they know you are lying. You are being lead out of the store when a sniper accross the street kills you for killing their friend.");
+                    }
+                }
+            }
+            //assasination
+            else if (answer.equals("b")){
+                System.out.println("");
+                
+                answer = keyboard.nextLine();
+                answer = checkValid(answer);
+
+                if (answer.equals("a")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+                else if (answer.equals("b")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+
+            } 
         }
+        //ecuador
         else if (answer.equals("c")){
-           
+            System.out.println("");
+            
+            answer = keyboard.nextLine();
+            answer = checkValid(answer);
+
+            if (answer.equals("a")){
+                System.out.println("");
+            
+                answer = keyboard.nextLine();
+                answer = checkValid(answer);
+
+                if (answer.equals("a")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+                else if (answer.equals("b")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+            }
+            else if (answer.equals("b")){
+                System.out.println("");
+                
+                answer = keyboard.nextLine();
+                answer = checkValid(answer);
+
+                if (answer.equals("a")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+                else if (answer.equals("b")){
+                    System.out.println("");
+                
+                    answer = keyboard.nextLine();
+                    answer = checkValid(answer);
+
+                    if (answer.equals("a")){}
+                    else if (answer.equals("b")){}
+                }
+
+            } 
+        }
 
 
         }
