@@ -45,12 +45,12 @@ public class createYourAdventure {
                     }
                     //forest
                     else if (answer.equals("b")){
-                        System.out.println("You run into the forest and find a nice cave to sleep in. you cubble up against a soft shrub in the cave and fall asleep. In the middle of the night you come to the realization that the shrub was actully a bear when it rips your face off. You die.");
+                        System.out.println("You run into the forest and find a nice cave to sleep in. you cuddle up against a soft shrub in the cave and fall asleep. In the middle of the night you come to the realization that the shrub was actully a bear when it rips your face off. You die.");
                     }
                 }
                 // run from homeless
                 if (answer.equals("b")){
-                    System.out.println("you rin and duck for cover as the other homeless man throws his knife at you. You see it fly by you, and and on the side walk ahead of you. You run over and pick it up. Type \'a\' to take the knife and run, type \'b\' to use the knife and rob the other homeless man.");
+                    System.out.println("you run and duck for cover as the other homeless man throws his knife at you. You see it fly by you, and land on the side walk ahead of you. You run over and pick it up. Type \'a\' to take the knife and run, type \'b\' to use the knife and rob the other homeless man.");
 
                     answer = keyboard.nextLine();
                     checkValid(answer);
@@ -189,7 +189,7 @@ public class createYourAdventure {
             answer = checkValid(answer);
 
             if (answer.equals("a")){
-                System.out.println("you continue on your journey, and the plane takes off. mid flight, the plane starts to go down,the cabin depreasurizes and the masks drop down. Yours does not, but the kid's next to you does. Type \'a\' to try to find another mask, or type \'to take the childs mask.\'");
+                System.out.println("you continue on your journey, and the plane takes off. mid flight, the plane starts to go down,the cabin depreasurizes and the masks drop down. Yours does not, but the kid's next to you does. Type \'a\' to try to find another mask, or type \'b\'to take the child's mask.a");
             
                 answer = keyboard.nextLine();
                 answer = checkValid(answer);
@@ -250,7 +250,7 @@ public class createYourAdventure {
                         System.out.println(" you go the the bathroom, but the cabin looses preasure and you pass out. Your body was never found in the crash.");
                     }
                     else if (answer.equals("b")){
-                        System.out.println("you stay seated and the plane ride smooths out. Just before you land, one of the passengers pulls our a gun and shooths the pilots through the cabin door. He then jumps out the door with a parashoot. No one survived the crash.");
+                        System.out.println("you stay seated and the plane ride smooths out. Just before you land, one of the passengers pulls out a gun and shoots the pilots through the cabin door. He then jumps out the plane door with a parachute. No one survived the crash.");
                     }
                 }
 
