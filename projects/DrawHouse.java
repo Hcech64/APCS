@@ -94,11 +94,15 @@ public class DrawHouse extends JPanel {
             g.fillRect(200, 225, 125, 25);
             
             //door
-            g.setColor(Color.ORANGE.darker().darker());
+            g.setColor(Color.ORANGE.darker().darker().darker());
             g.fillRect(275, 350, 60, 100);
             //handle
             g.setColor(Color.black);
             g.fillOval(325,400,7,7);
+
+            //address
+            g.setColor(Color.BLACK.darker());
+            g.drawString("1600", 285, 345);
 
             //windows
             g.setColor(Color.CYAN.darker());
@@ -106,6 +110,12 @@ public class DrawHouse extends JPanel {
             g.fillRect(175, 375, 24, 24);
             g.fillRect(200, 350, 24, 24);
             g.fillRect(200, 375, 24, 24);
+
+            // upper window
+            g.fillRect(238, 250, 24, 24);
+            g.fillRect(238, 275, 24, 24);
+            g.fillRect(263, 250, 24, 24);
+            g.fillRect(263, 275, 24, 24);
 
             //bushes
             g.setColor(Color.green.darker());
@@ -117,9 +127,11 @@ public class DrawHouse extends JPanel {
             g.fillOval(180, 403, 25, 28);
             g.fillOval(173, 398, 20, 32);
             g.fillOval(169, 3960, 35, 30);
+
             //planter box
             g.setColor(Color.ORANGE.darker().darker());
             g.fillRect(173, 420, 75, 30);
+
             //planter boards
             int board = 180;
             g.setColor(Color.GRAY.darker().darker());
@@ -127,6 +139,26 @@ public class DrawHouse extends JPanel {
                 g.drawLine(board, 420, board, 450);
                 board += 15;
             }
+
+            // UFO
+            
+
+            g.setColor(Color.GRAY.darker());
+            g.fillOval(495, 295, 160, 110);
+
+            g.setColor(Color.CYAN.darker());
+            g.fillOval(500, 300, 150, 100);
+
+            g.setColor(Color.GRAY.darker());
+            g.fillOval(450, 355, 250, 60);
+
+            g.setColor(Color.green.darker());
+            g.fillOval(x, y, y, board);
+
+
+            g.setColor(Color.green);
+            g.drawArc(450, 400, 225, 25, -45, -45);
+
 
 
 
