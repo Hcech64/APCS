@@ -102,7 +102,7 @@ public class DrawHouse extends JPanel {
 
             //address
             g.setColor(Color.BLACK.darker());
-            g.drawString("1600", 285, 345);
+            g.drawString("1600", 290, 345);
 
             //windows
             g.setColor(Color.CYAN.darker());
@@ -128,6 +128,9 @@ public class DrawHouse extends JPanel {
             g.fillOval(173, 398, 20, 32);
             g.fillOval(169, 3960, 35, 30);
 
+            g.setColor(Color.ORANGE.darker().darker().darker().darker());
+            g.drawArc(200, 395, 10, 30, 180, 225);
+
             //planter box
             g.setColor(Color.ORANGE.darker().darker());
             g.fillRect(173, 420, 75, 30);
@@ -140,24 +143,25 @@ public class DrawHouse extends JPanel {
                 board += 15;
             }
 
-            // UFO
-            
-
+            // UFU
             g.setColor(Color.GRAY.darker());
             g.fillOval(495, 295, 160, 110);
 
             g.setColor(Color.CYAN.darker());
             g.fillOval(500, 300, 150, 100);
 
+            g.setColor(Color.BLACK.darker());
+            g.fillOval(525, 340, 30, 30);
+            g.setColor(Color.CYAN.darker());
+            g.fillOval(527, 342, 25,25);
+
+            g.setColor(Color.BLACK);
+            g.drawLine(550, 345, 539, 352);
+            g.drawLine(530, 345, 539, 352);
+            g.drawLine(539, 352, 539, 380);
+
             g.setColor(Color.GRAY.darker());
             g.fillOval(450, 355, 250, 60);
-
-            g.setColor(Color.green.darker());
-            g.fillOval(x, y, y, board);
-
-
-            g.setColor(Color.green);
-            g.drawArc(450, 400, 225, 25, -45, -45);
 
 
 
