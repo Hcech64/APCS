@@ -10,6 +10,6 @@ public static void main (String [] args){
         for(x=0; x<=y; x++);
         System.out.print("*");
         }
-         System.out.println("*");
+        System.out.println("*");
     }
 }
