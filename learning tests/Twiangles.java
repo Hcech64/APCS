@@ -10,19 +10,24 @@ public class Twiangles {
         int y = 0;
     
 
-        System.out.println("what shape do you want to see? square, rectangle, right triangle, or isosceles triangle?");
+        System.out.println("what shape do you want to see? square, rectangle, right triangle, or isosceles triangle? type \'exit\' to leave the program");
         String input = keyboard.nextLine();
 
-        while(!input.equalsIgnoreCase("square") && !input.equalsIgnoreCase("rectangle") && !input.equalsIgnoreCase("right triangle") && !input.equalsIgnoreCase("isosceles triangle")){
-            System.out.println("please enter one of the options: square, rectangle, right triangle, or isosceles triangle");
+        while(!input.equalsIgnoreCase("square") && !input.equalsIgnoreCase("rectangle") && !input.equalsIgnoreCase("right triangle") && !input.equalsIgnoreCase("isosceles triangle") && !input.equalsIgnoreCase("exit")){
+            System.out.println("please enter one of the options: square, rectangle, right triangle, isosceles triangle, or exit to leave");
             input = keyboard.nextLine();
         }
 
-        System.out.println("how any pixels tall do you want the shape to be?");
-        int tall = keyboard.nextInt();
+        
 
         
 
+        if(input.equalsIgnoreCase("exit")){
+            System.exit(0);
+        }
+        
+        System.out.println("how any pixels tall do you want the shape to be?");
+        int tall = keyboard.nextInt();
 
         if(input.equalsIgnoreCase("square")){
             for(x = 0; x <tall; x++){
