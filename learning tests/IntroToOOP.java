@@ -11,7 +11,7 @@ class Computer{
         memory = mem;
         storage = stor;
     }
-    String penis = "penis";
+
     public String toString(){
 
         return processor + ", " + memory + "GB memory, " +storage +  "ZB storage.";
@@ -80,8 +80,12 @@ public class IntroToOOP {
         System.out.println("please ender the depth of the box");
         int depth = d.nextInt();
 
-        
+
         boxy box = new boxy(height, width, depth);
         System.out.println(box);
+
+        h.close();
+        w.close();
+        d.close();
     }
 }
