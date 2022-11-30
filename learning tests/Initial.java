@@ -3,7 +3,7 @@ import java.util.*;
 public class Initial{
         public static void main(String[] args) {
             Scanner keyboard = new Scanner (System.in);
-    
+
             System.out.println("what is your first name");
             String first = keyboard.nextLine();
             System.out.println("what is your last name");
@@ -15,8 +15,15 @@ public class Initial{
             int input = Integer.parseInt(keyboard.nextLine());
             Function func = new Function(input);
             System.out.println(func);
-
-
+    
+            System.out.println("what is your name?");
+            String Name = keyboard.nextLine();
+    
+            System.out.println("Yes or no, Is you a " + Function.sexy + " ?");
+            String sexy = keyboard.nextLine();
+    
+            IfTyler tyler = new IfTyler(Name, sexy);
+            System.out.println(tyler);
     
             keyboard.close();
         }

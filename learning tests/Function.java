@@ -25,9 +25,10 @@ public class Function {
         IfTyler tyler = new IfTyler(Name, sexy);
         System.out.println(tyler);
 
-
         keyboard.close();
     }
+
+    public static String sexy = "sexy";
     
     private int number;
     public Function(int num){
