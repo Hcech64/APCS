@@ -6,6 +6,4 @@ public class LearningClasses{
     public static int math(int x) {
         return x*2;
     }
-
-
 }
