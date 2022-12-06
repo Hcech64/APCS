@@ -1,7 +1,8 @@
 
 class apples{
 	public static void main(String args[]){
-		System.out.println("hello");  // Line
-		System.out.print("world");
+		System.out.print("hello ");  // Line
+		System.out.println("world");
+		System.out.println( LearningClasses.math(6));
 	} 
 }

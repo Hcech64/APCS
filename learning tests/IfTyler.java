@@ -27,34 +27,34 @@ public class IfTyler {
 
         keyboard.close();
     }
-private String Name;
-private String Sexy;
-private String string = "";
+    private String Name;
+    private String Sexy;
+    private String string = "";
 
-public IfTyler(String name, String sexy){
-    Name = name;
-    Sexy = sexy;
-}
-
-public String toString(){
-    if(Name.equalsIgnoreCase("tyler") && (Sexy.equalsIgnoreCase("Yes"))){
-        return "heyyy bebe. Ur a sexy " + Name;
+    public IfTyler(String name, String sexy){
+        Name = name;
+        Sexy = sexy;
     }
 
-    else if(Name.equalsIgnoreCase("tyler") && (!Sexy.equalsIgnoreCase("Yes"))){
-        return "False all tylers are sexy";
-    }
+    public String toString(){
+        if(Name.equalsIgnoreCase("tyler") && (Sexy.equalsIgnoreCase("Yes"))){
+            return "heyyy bebe. Ur a sexy " + Name;
+        }
 
-    if(!Name.equalsIgnoreCase("tyler") && (Sexy.equalsIgnoreCase("Yes"))){
-        return "damn boi i seeee youuuu!";
-    }
+        else if(Name.equalsIgnoreCase("tyler") && (!Sexy.equalsIgnoreCase("Yes"))){
+            return "False all tylers are sexy";
+        }
 
-    if(!Name.equalsIgnoreCase("tyler") && (!Sexy.equalsIgnoreCase("Yes"))){
-        return "thats a big oof " + Name;
+        if(!Name.equalsIgnoreCase("tyler") && (Sexy.equalsIgnoreCase("Yes"))){
+            return "damn boi i seeee youuuu!";
+        }
+
+        if(!Name.equalsIgnoreCase("tyler") && (!Sexy.equalsIgnoreCase("Yes"))){
+            return "thats a big oof " + Name;
+        }
+        return string;
+        
     }
-    return string;
-    
-}
 
 }
 

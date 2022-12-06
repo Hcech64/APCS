@@ -36,6 +36,7 @@ public class Initial{
         last = Last;
         first = First;
     }
+    
     public String toString(){
         return first.toUpperCase().substring(0,1) + " " + last.toUpperCase().substring(0,1);
     }

@@ -19,12 +19,13 @@ public class Function {
         System.out.println("what is your name?");
         String Name = keyboard.nextLine();
 
-        System.out.println("Yes or no, Is you a sexy?");
+        System.out.println("Yes or no, Is you a " + sexy + " ?");
         String sexy = keyboard.nextLine();
 
         IfTyler tyler = new IfTyler(Name, sexy);
         System.out.println(tyler);
 
+        keyboard.close();
         keyboard.close();
     }
 
@@ -36,7 +37,7 @@ public class Function {
     }
 
     public String toString(){
-    return "f(" + number + ") = " + number*3;
+        return "f(" + number + ") = " + number*3;
     }
 }
 
