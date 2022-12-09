@@ -34,23 +34,14 @@ public class FixedFraction {
 	public static void frac1(int first, int second, int third, int fourth){
         int newNum = first*fourth + third*second;
 		int newDen = second*fourth;
-		int x = 0;
-		int y =0;
-		int remainNom = 1;
-		int remainDen = 1;
+		int x = 2;
 		int gc = 1;
 
 
-		for(x=0; x <= newNum; x++){
-			for(y=0; y <= newDen; y++){
-				remainDen = newDen/y;
-				if((remainDen ==0) &&(remainNom == 0) && (x == y)){
-					gc = x;
-				}
+		for(x=2; x <= newNum + newDen; x++){
+			if((newNum % x == 0) && (newDen % x == 0)){
+				gc = x;
 			}
-			remainNom = newNum/x;
-			
-			
 		}
 
         System.out.println("Solution:");
@@ -65,6 +56,22 @@ public class FixedFraction {
 	public static void mult(int first, int second, int third, int fourth){
 		int Den = second*fourth;
 		int Num = first*third;
+		int x =2;
+		int gc = 1;
 		System.out.println(Num + "/" + Den);
+
+		for(x=2; x <= Num + Den; x++){
+			if((Num % x == 0) && (Den % x == 0)){
+				gc = x;
+			}
+		}
+
+        System.out.println("Solution:");
+        System.out.println();
+        System.out.println(first +  "     "+ third );
+        System.out.println("_  x  _   = " +  Num/gc + "/" + Den/gc);
+        System.out.println(second + "     "+ fourth);
+
+
 	}
 }
