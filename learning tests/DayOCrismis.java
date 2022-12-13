@@ -36,9 +36,9 @@ public class DayOCrismis {
 
             System.out.println("On the " + num[x] + " of Christmas, my true love gave to me:");
            
-            for(int y = 1; y <= x; y++){
+            for(int y = x; y >= 1; y--)
                  System.out.println(dayOfChristmas[y]);
-            }
+            
             System.out.println("");
         }
     }
