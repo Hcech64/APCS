@@ -1,11 +1,12 @@
 public class WordSearch {
-    public WordSearch(){
+    public static String[][] WordSearchGen(){
 
         //creqte grid with random letters
         String[][] grid = new String [10] [10];
         for(int x = 0; x <10; x++){
             for(int y = 0; y< 10; y++){
-                grid[x][y] = WordSearch.random();
+                String word = WordSearch.random();
+                grid[x][y] = word;
             }
         }
 
@@ -29,12 +30,16 @@ public class WordSearch {
 
 
         //print
+        return grid;
+
+        /*
         for(int l = 0 ; l < 10; l++){
-                    for(int b = 0; b < 10; b++ ){
-                        System.out.print(grid[l][b] + "  ");
-                    }
-                    System.out.println(grid[l][0]);
-                }
+            for(int b = 0; b < 10; b++ ){
+                System.out.print(grid[l][b] + "  ");
+            }
+            System.out.println(grid[l][0]);
+        }
+        */
     }
 
 
