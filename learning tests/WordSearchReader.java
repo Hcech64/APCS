@@ -39,7 +39,5 @@ public class WordSearchReader {
             Poopiesfinder = "";
             
         }
-
-
     }
 }
