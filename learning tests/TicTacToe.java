@@ -17,35 +17,19 @@ public class TicTacToe {
 
       System.out.println(playerSymbol + "'s turn\n");
      
-      int temprow = 3;
-      int tempcol = 3;    
+      int row = 4;
+      int col = 4;
 
-      while(tempcol < 3){
+
+
+      while(col > 3){
         System.out.print("What col (1-3): ");
-        tempcol = Integer.parseInt(kb.nextLine()) - 1;
+        col = Integer.parseInt(kb.nextLine()) - 1;
       }
-      while(temprow < 3){
+      while(row > 3){
         System.out.print("What row (1-3): ");
-        temprow = Integer.parseInt(kb.nextLine()) - 1;
+        row = Integer.parseInt(kb.nextLine()) - 1;
       }
-           
-
-      while(grid[temprow][tempcol] != 0){
-        while(tempcol < 3){
-          System.out.print("What col (1-3): ");
-          tempcol = Integer.parseInt(kb.nextLine()) - 1;
-        }
-        while(temprow < 3){
-          System.out.print("What row (1-3): ");
-          temprow = Integer.parseInt(kb.nextLine()) - 1;
-        }
-      }
-
-      int row = temprow;
-      int col = tempcol;
-
-    
-
 
       grid[row][col] = player;
 
